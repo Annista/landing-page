@@ -1,233 +1,252 @@
-body{
-    margin:0;
-    padding: 0;
+body {
+   margin: 0;
+   padding: 0;
+   font-family: "Roboto", sans-serif;
 }
 
-*{
-    box-sizing: border-box;
+* {
+   box-sizing: border-box;
 }
 
-.header, .hero-section, .footer{
-    background: #1f2937;
+.header,
+.hero-section,
+.footer {
+   background: #1f2937;
 }
 
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10%; /*Used relative measurement here to ensure that the spaces to the left and right of the header maintained the same look whether the window was maximized or minimized. Same for padding in hero section*/
-    height: 10vh;
-    
-    
-
+.header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 10%; /*Used relative measurement here to ensure that the spaces to the left and right of the header maintained the same look whether the window was maximized or minimized. Same for padding in hero section*/
+   height: 10vh;
 }
 
-.header-logo{
-    font-size: 24px;
-    color: #f9faf8;
+.header-logo {
+   font-size: 24px;
+   color: #f9faf8;
 }
 
-
-
-.header-links{
-    display: flex;
-    list-style-type: none;
+.header-links {
+   display: flex;
+   list-style-type: none;
 }
 
-.head-link{
-    text-decoration: none;
-    margin: 10px;
-    
+.head-link {
+   text-decoration: none;
+   margin: 10px;
 }
 
-.hero-section{
+.head-link:hover {
+   color: #3882f6;
+}
+
+.hero-section {
    display: flex;
    padding: 0 10%;
    justify-content: space-between;
-    align-items: center;
+   align-items: center;
    height: 100vh;
-   
 }
 
-
-
-.hero-text-container{
- margin-right: 30px;
-  flex: 1 ; 
+.hero-text-container {
+   margin-right: 30px;
+   flex: 1;
 }
 
-.signup-button, .hero-button{
-    padding: 10px 30px;
-    border-radius: 10px;
+.signup-button,
+.hero-button {
+   padding: 10px 30px;
+   border-radius: 10px;
 }
 
-.hero-button{
-    border: transparent;
+.hero-button {
+   border: transparent;
 }
 
-.main-heading{
-    font-size: 48px;
+button:hover {
+   color: #3882f6;
+   background: #f9faf8;
+   cursor: pointer;
+}
+
+.main-heading {
+   font-size: 48px;
    font-weight: 900;
    color: #f9faf8;
    margin-bottom: 0;
-    
 }
 
-.main-subtext, .head-link, .footer, .signup-subtext{
-    font-size: 18px;
-    color: #e5e7eb;
+.main-subtext,
+.head-link,
+.footer,
+.signup-subtext {
+   font-size: 18px;
+   color: #e5e7eb;
 }
 
-.main-subtext{
-    margin-top: 0;
+.main-subtext {
+   margin-top: 0;
 }
 
-
-
-.hero-img-container{
-    height:300px;
-    background: grey;
-    flex: 2 ;/*image would be twice as wide as text at any given time*/
-      
+.hero-img-container {
+   display: flex;
+   justify-content: center;
+   /*background: grey;*/
+   /*flex: 2 ;/*image would be twice as wide as text at any given time*/
 }
 
-.info-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-   
-    
+.hero-img {
+   width: 33vw;
+   height: auto;
 }
 
-.info-heading, .info-text, .quote-text, .quote-source-text{
-    color: #1f2937;
+.info-section {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
 }
 
-.info-heading{
-  text-align: center;
-  font-size: 36px;
-  font-weight: 900;
-  
+.info-heading,
+.info-text,
+.quote-text,
+.quote-source-text {
+   color: #1f2937;
 }
 
-
-
-.info-container{      
-    display: flex; 
-    flex-wrap: wrap;
-    justify-content: center;
-    
+.info-heading {
+   text-align: center;
+   font-size: 36px;
+   font-weight: 900;
 }
 
-.info-item{
-    margin: 10px;
-    text-align: center;
-    width: 150px;
+.info-container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+   flex: 1;
+   gap: 20px;
+   width: 90%;
 }
 
+.info-item-link {
+   flex: 0 1 20%; /*item will not grow to fill available space in container. Its width will always be 20% of its container's (parent's) width (flex-basis: 20%)*/
+   text-decoration: none;
 
-
-
-.info-img-container{
-    height: 150px;
-    border: 2px solid #3882f6;
-    border-radius: 7%;
-    
+   padding: 10px;
 }
 
-.quote-section{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #e5e7eb;
+.info-item-link:hover {
+   background: #3881f64d;
+   border-radius: 8%;
 }
 
-
-.quote-container{
-   
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 55%;
+.info-item {
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
-.quote-text{
-    font-size: 36px;
-    font-weight: 100;
-    font-style: italic;
+.info-img-container {
+   width: 100%; /* its width is 100% (equal to) its container*/
 
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
-.quote-source-container{
-    width: 100%;
-    padding-right: 30px;
+.info-img {
+   width: 150px;
+   border: 2px solid #3882f6;
+   border-radius: 8%;
+   flex: 1; /*img width is 150px, but grows to fill its container (info-img-container)*/
 }
 
-.quote-source-text{
-
- text-align: end;
- font-size: 24px;
- font-weight: 800;
-
+.quote-section {
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: #e5e7eb;
 }
 
-.signup-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    
+.quote-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 55%;
 }
 
-.signup-box, .signup-button, .hero-button{
-    background: #3882f6;
+.quote-text {
+   font-size: 36px;
+   font-weight: 100;
+   font-style: italic;
 }
 
-.signup-box{
-    display: flex;
+.quote-source-container {
+   width: 100%;
+   padding-right: 30px;
+}
+
+.quote-source-text {
+   text-align: end;
+   font-size: 24px;
+   font-weight: 800;
+}
+
+.signup-section {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+}
+
+.signup-box,
+.signup-button,
+.hero-button {
+   background: #3882f6;
+}
+
+.signup-box {
+   display: flex;
    justify-content: space-evenly;
-    align-items: center;
-     width: 70%;
-    padding: 30px 20px;
-    border-radius: 5px;
-   
+   align-items: center;
+   width: 70%;
+   padding: 30px 20px;
+   border-radius: 5px;
 }
 
-.signup-msg-container{
-    margin-right: 20px;
+.signup-msg-container {
+   margin-right: 20px;
 }
 
-.signup-heading, .signup-button, .hero-button{
-    color: #f9faf8;
+.signup-heading,
+.signup-button,
+.hero-button {
+   color: #f9faf8;
 }
 
-.signup-heading{
-    font-size: 24px;
-    margin-bottom: 0;
+.signup-heading {
+   font-size: 24px;
+   margin-bottom: 0;
 }
 
-.signup-subtext{
-    margin-top: 0;
+.signup-subtext {
+   margin-top: 0;
 }
 
-
-.signup-button{ 
-    border: 2px solid #f9faf8; 
+.signup-button {
+   border: 2px solid #f9faf8;
 }
 
-
-.footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;  
-    height: 10vh;
+.footer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 10vh;
 }
-
-
-
-
-
-
