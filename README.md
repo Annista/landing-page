@@ -14,3 +14,15 @@ To make use of the following CSS properties:
 * padding and margin
 * flexbox
 
+## Credits
+
+### Images
+
+* Woman in Sunglasses With Beaded Necklace- Photo by Arsham Haghani from Pexels
+* Silver Necklace Pendant - Photo by Invalid Account on Unsplash
+* Brown and Black Earrings- Photo by Lana Lalalama on Unsplash
+* Gold and Pink Gemstone Ring- Photo by Invalid Account on Unsplash
+* Beaded White and Blue Crystal Crown- Photo by Irene Kredenets on Unsplash
+
+  
+
